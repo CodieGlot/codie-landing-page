@@ -1,0 +1,8 @@
+.content-wrapper {
+    &.sidebar-opened {
+        margin-left: 270px;
+    }
+    &.sidebar-closed {
+        margin-left: 20px;
+    }
+}

@@ -1,16 +1,18 @@
+import { useContext } from "react";
 import "./styles/Header.scss";
+import { SidebarContext } from "../../context";
 
 type HeaderProps = {
-  isSidebarOpened: boolean;
   toggleSidebar: () => void;
 };
 
-export function Header({ isSidebarOpened, toggleSidebar }: HeaderProps) {
+export function Header({ toggleSidebar }: HeaderProps) {
+  const isSidebarOpened = useContext(SidebarContext);
   return (
     <>
       <header>
         <button
-          className={"icon-wrapper" + (isSidebarOpened ? "test" : "")}
+          className={"icon-wrapper " + (isSidebarOpened ? "opened" : "")}
           onClick={() => toggleSidebar()}
         >
           <div className="nav-icon">

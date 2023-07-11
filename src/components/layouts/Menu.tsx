@@ -1,22 +1,12 @@
+import { useContext } from "react";
 import "./styles/Menu.scss";
+import { SidebarContext } from "../../context";
 
-type MenuProps = {
-  isSidebarOpened: boolean;
-};
-
-export function Menu({ isSidebarOpened }: MenuProps) {
+export function Menu() {
+  const isSidebarOpened = useContext(SidebarContext);
   return (
     isSidebarOpened && (
       <nav className="nav-container">
-        <a
-          href="#"
-          target="_blank"
-          title="Enterprise | NestJS - A node.js framework built on top of TypeScript"
-          className="btn btn-support"
-        >
-          Get enterprise support
-        </a>
-
         <a href="#" className="btn btn-version">
           Version 1
         </a>
@@ -28,6 +18,14 @@ export function Menu({ isSidebarOpened }: MenuProps) {
         </a>
         <a href="#" className="btn btn-version">
           Version 4
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          title="Enterprise | NestJS - A node.js framework built on top of TypeScript"
+          className="btn btn-support"
+        >
+          Get enterprise support
         </a>
       </nav>
     )
