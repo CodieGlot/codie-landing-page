@@ -1,19 +1,19 @@
-import style from "./styles/Header.scss?inline";
+import "./styles/Header.scss";
 
 export function Header() {
   return (
     <>
-      <div className={style["top-bar"]}>
+      <div className="top-bar">
         <a href="#">CODIE LANDING PAGE</a>
       </div>
       <header>
-        <button className={styles."icon-wrapper">
-          <div className={styles."nav-icon">
-            <div className={styles."mobile-nav-icon">
+        <button className="icon-wrapper">
+          <div className="nav-icon">
+            <div className="mobile-nav-icon">
               <span></span>
             </div>
             <svg
-              className={styles."desktop-nav-icon"
+              className="desktop-nav-icon"
               height="512pt"
               viewBox="0 -27 512 512"
               width="512pt"
@@ -29,8 +29,8 @@ export function Header() {
             </svg>
           </div>
         </button>
-        <div className={styles."menu-wrapper">
-          <div className={styles."search-wrapper" id="search"></div>
+        <div className="menu-wrapper">
+          <div className="search-wrapper" id="search"></div>
           <ul>
             <li>
               <a href="#" target="_blank">
@@ -44,7 +44,7 @@ export function Header() {
             </li>
             <li>
               <a href="#" target="_blank">
-                <span className={styles."new">NEW</span> Devtools
+                <span className="new">NEW</span> Devtools
               </a>
             </li>
             <li>
