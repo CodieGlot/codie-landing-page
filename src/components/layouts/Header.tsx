@@ -3,9 +3,6 @@ import "./styles/Header.scss";
 export function Header() {
   return (
     <>
-      <div className="top-bar">
-        <a href="#">CODIE LANDING PAGE</a>
-      </div>
       <header>
         <button className="icon-wrapper">
           <div className="nav-icon">
