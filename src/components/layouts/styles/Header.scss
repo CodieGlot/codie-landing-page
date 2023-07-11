@@ -79,7 +79,9 @@ header {
     @include utils.media(normal) {
       width: 80px;
     }
+
   }
+  
   .nav-icon {
     @extend .center-element;
 

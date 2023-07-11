@@ -1,16 +1,18 @@
 import "./styles/Header.scss";
-import { useState } from "react";
 
-export function Header() {
-  const [isClickHamburger, setIsClickHamburger] = useState(false);
-  const toggle = () => {
-    setIsClickHamburger(!isClickHamburger);
-  };
-  console.log("Menu status:", isClickHamburger);
+type HeaderProps = {
+  isSidebarOpened: boolean;
+  toggleSidebar: () => void;
+};
+
+export function Header({ isSidebarOpened, toggleSidebar }: HeaderProps) {
   return (
     <>
       <header>
-        <button className="icon-wrapper">
+        <button
+          className={"icon-wrapper" + (isSidebarOpened ? "test" : "")}
+          onClick={() => toggleSidebar()}
+        >
           <div className="nav-icon">
             <div className="mobile-nav-icon">
               <span></span>
@@ -21,7 +23,6 @@ export function Header() {
               viewBox="0 -27 512 512"
               width="512pt"
               xmlns="http://www.w3.org/2000/svg"
-              onClick={() => toggle()}
             >
               <path d="m213.117188 81.011719c6.273437-5.488281 6.910156-15.027344 1.421874-21.300781-5.492187-6.273438-15.027343-6.910157-21.300781-1.421876l-2.597656 2.273438c-6.273437 5.488281-6.910156 15.027344-1.421875 21.300781 2.984375 3.410157 7.164062 5.15625 11.367188 5.15625 3.527343 0 7.070312-1.230469 9.933593-3.734375zm0 0" />
               <path d="m117.898438 120.203125-2.597657 2.273437c-6.273437 5.492188-6.910156 15.027344-1.421875 21.300782 2.984375 3.414062 7.164063 5.15625 11.367188 5.15625 3.527344 0 7.070312-1.226563 9.933594-3.730469l2.597656-2.273437c6.273437-5.492188 6.910156-15.027344 1.421875-21.300782-5.488281-6.277344-15.027344-6.914062-21.300781-1.425781zm0 0" />
