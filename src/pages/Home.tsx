@@ -3,7 +3,9 @@ import { Wrapper } from "../components/layouts";
 export function Home() {
   return (
     <Wrapper>
-      <h1>Home</h1>
+      <div style={{ marginLeft: "200px" }}>
+        <h1>Home</h1>
+      </div>
     </Wrapper>
   );
 }

@@ -1,5 +1,6 @@
-@use '../../../scss/variables';
-@use '../../../scss/utils';
+@use "../../../scss/variables";
+@use "../../../scss/utils";
+
 
 :host {
   position: fixed;
@@ -281,7 +282,7 @@ header {
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       background: #246081;
       height: 2px;
@@ -334,7 +335,7 @@ header {
   span,
   &::after,
   &::before {
-    content: '';
+    content: "";
     background: #fff;
     display: block;
     height: 2px;
@@ -381,7 +382,7 @@ header {
   border-bottom: 2px solid #414141;
   padding: 5px 20px 5px 28px;
   color: #fff;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
   font-display: swap;
   font-size: 14px;
   outline: 0 !important;
@@ -400,11 +401,10 @@ header {
 }
 
 ::ng-deep .DocSearch-Button:hover,
-::ng-deep .DocSearch-Button:active
-::ng-deep .DocSearch-Button:focus {
+::ng-deep .DocSearch-Button:active ::ng-deep .DocSearch-Button:focus {
   border-bottom-color: variables.$red-color;
   width: 240px;
-  
+
   @media (min-width: 1200px) and (max-width: 1300px) {
     width: 190px;
   }
@@ -436,8 +436,8 @@ header {
   display: none;
 }
 
-::ng-deep .DocSearch-Button:active, 
-::ng-deep .DocSearch-Button:focus, 
+::ng-deep .DocSearch-Button:active,
+::ng-deep .DocSearch-Button:focus,
 ::ng-deep.DocSearch-Button:hover {
   color: #a5a5a5;
 }
@@ -458,7 +458,7 @@ header {
 
   &::after,
   &::before {
-    content: '';
+    content: "";
     background: variables.$red-color;
     display: block;
     height: 2px;

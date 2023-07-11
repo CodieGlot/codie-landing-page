@@ -11,8 +11,18 @@ export function Menu() {
       >
         Get enterprise support
       </a>
+
       <a href="#" className="btn btn-version">
         Version 1
+      </a>
+      <a href="#" className="btn btn-version">
+        Version 2
+      </a>
+      <a href="#" className="btn btn-version">
+        Version 3
+      </a>
+      <a href="#" className="btn btn-version">
+        Version 4
       </a>
     </nav>
   );
