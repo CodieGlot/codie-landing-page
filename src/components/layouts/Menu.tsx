@@ -19,12 +19,7 @@ export function Menu() {
         <a href="#" className="btn btn-version">
           Version 4
         </a>
-        <a
-          href="#"
-          target="_blank"
-          title="Enterprise | NestJS - A node.js framework built on top of TypeScript"
-          className="btn btn-support"
-        >
+        <a href="#" target="_blank" className="btn btn-support">
           Get enterprise support
         </a>
       </nav>
