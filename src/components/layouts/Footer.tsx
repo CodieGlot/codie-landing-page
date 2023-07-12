@@ -9,13 +9,13 @@ export function Footer() {
             <i className="fab fa-facebook"></i>
           </a>
           <a href="#" target="_blank">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#" target="_blank">
             <i className="fab fa-github"></i>
           </a>
           <a href="#" target="_blank">
-            <i className="fa fa-globe"></i>
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i className="fa-brands fa-discord"></i>
           </a>
         </div>
         <div className="credits">
