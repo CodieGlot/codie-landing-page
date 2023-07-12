@@ -1,5 +1,6 @@
 @use "../../../scss/variables";
 @use "../../../scss/utils";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Source+Sans+3&display=swap");
 
 :host {
   @extend .transition;
@@ -96,4 +97,17 @@
   top: 0; /* Stay at the top */
   left: 0;
   background: #f5f5f5;
+}
+.nav-link {
+  color: #151515;
+}
+.dropdown-menu {
+  margin-top: -2px;
+  text-decoration: none;
+  list-style-type: none;
+
+  a {
+    color: #404040;
+    font-family: "Source Sans 3", sans-serif;
+  }
 }
