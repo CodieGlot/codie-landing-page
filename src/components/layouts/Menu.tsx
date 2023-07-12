@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./styles/Menu.scss";
 import { SidebarContext } from "../../context";
+import { IMenuItem } from "../../common/interfaces";
 
 const highlightIfActive = ({
   isActive,
@@ -19,25 +20,30 @@ const highlightIfActive = ({
 
 export function Menu() {
   const isSidebarOpened = useContext(SidebarContext);
+  const items: IMenuItem[] = [
+    {
+      title: "OVERVIEW",
+      path: "/",
+    },
+    {
+      title: "BACKGROUND",
+      path: "/background",
+    },
+  ];
   return (
     isSidebarOpened && (
       <nav className="nav-container">
-        <a className="btn btn-version">
-          <NavLink to="/" className="nav-link" style={highlightIfActive}>
-            OVERVIEW
-          </NavLink>
-        </a>
-        <a className="btn btn-version">
-          <NavLink
-            to="/background"
-            className="nav-link"
-            style={highlightIfActive}
-          >
-            BACKGROUND
-          </NavLink>
-        </a>
-        <a className="btn btn-version">Version 3</a>
-        <a className="btn btn-version">Version 4</a>
+        {items.map((item) => (
+          <a className="btn btn-version">
+            <NavLink
+              to={item.path}
+              className="nav-link"
+              style={highlightIfActive}
+            >
+              {item.title}
+            </NavLink>
+          </a>
+        ))}
         <a target="_blank" className="btn btn-support">
           Get enterprise support
         </a>
