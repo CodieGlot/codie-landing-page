@@ -60,16 +60,19 @@ export function Header({ toggleSidebar }: HeaderProps) {
               </a>
             </li>
           </ul>
-          <a href="#" target="_blank">
+          <a href="https://www.facebook.com/codieglot/" target="_blank">
             <i className="fab fa-facebook"></i>
           </a>
-          <a href="#" target="_blank">
+          <a href="https://github.com/CodieGlot" target="_blank">
             <i className="fab fa-github"></i>
           </a>
-          <a href="#" target="_blank">
+          <a href="https://www.linkedin.com/in/codieglot/" target="_blank">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="https://discordapp.com/users/847426886182240307"
+            target="_blank"
+          >
             <i className="fa-brands fab fa-discord"></i>
           </a>
         </div>
