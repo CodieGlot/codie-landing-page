@@ -1,7 +1,6 @@
 @use "../../../scss/variables";
 @use "../../../scss/utils";
 
-
 :host {
   position: fixed;
   z-index: 10000;
@@ -80,9 +79,8 @@ header {
     @include utils.media(normal) {
       width: 80px;
     }
-
   }
-  
+
   .nav-icon {
     @extend .center-element;
 
@@ -482,4 +480,7 @@ header {
   .shop-link {
     display: none !important;
   }
+}
+.fab {
+  padding: 5px;
 }

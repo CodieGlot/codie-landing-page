@@ -1,9 +1,10 @@
 @use "../../scss/utils";
 
 .content-wrapper {
-    @extend .transition;
-    margin-left: 30px;
-    &.sidebar-opened {
-        margin-left: 280px;
-    }
+  margin-top: 100px;
+  @extend .transition;
+  margin-left: 30px;
+  &.sidebar-opened {
+    margin-left: 280px;
+  }
 }

@@ -69,7 +69,7 @@ export function Header({ toggleSidebar }: HeaderProps) {
               <i className="fab fa-linkedin"></i>
             </a>
             <a href="#" target="_blank">
-              <i className="fa-brands fa-discord"></i>
+              <i className="fa-brands fab fa-discord"></i>
             </a>
           </ul>
         </div>
