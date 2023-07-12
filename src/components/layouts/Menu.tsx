@@ -18,53 +18,54 @@ const highlightIfActive = ({
     : {};
 };
 
+const items: IMenuItem[] = [
+  {
+    title: "OVERVIEW",
+    path: "/",
+    children: [
+      {
+        title: "Background",
+        path: "/background",
+      },
+      {
+        title: "Techniques",
+        path: "/techniques",
+      },
+    ],
+  },
+  {
+    title: "CONCEPTS",
+    path: "/concepts",
+    children: [
+      {
+        title: "Algorithms",
+        path: "/algorithms",
+      },
+      {
+        title: "Object Oriented Programming",
+        path: "/oop",
+      },
+    ],
+  },
+  {
+    title: "TOOLS",
+    path: "/tools",
+    children: [
+      {
+        title: "Text editor",
+        path: "/texteditor",
+      },
+      {
+        title: "Codie",
+        path: "/codie",
+      },
+    ],
+  },
+];
+
 export function Menu() {
   const isSidebarOpened = useContext(SidebarContext);
   const [isOpen, setIsOpen] = useState<{ [title: string]: boolean }>({});
-  const items: IMenuItem[] = [
-    {
-      title: "OVERVIEW",
-      path: "/",
-      children: [
-        {
-          title: "Background",
-          path: "/background",
-        },
-        {
-          title: "Techniques",
-          path: "/techniques",
-        },
-      ],
-    },
-    {
-      title: "CONCEPTS",
-      path: "/concepts",
-      children: [
-        {
-          title: "Algorithms",
-          path: "/algorithms",
-        },
-        {
-          title: "Object Oriented Programming",
-          path: "/oop",
-        },
-      ],
-    },
-    {
-      title: "TOOLS",
-      path: "/tools",
-      children: [
-        {
-          title: "Text editor",
-          path: "/texteditor",
-        },
-        {
-          title: "Codie",
-          path: "/codie",
-        },
-      ],
-    },
-  ];
 
   const toggleDropdown = (title: string) => {
     setIsOpen((prevOpen) => ({

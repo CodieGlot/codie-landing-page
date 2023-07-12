@@ -7,7 +7,7 @@ import { Footer, Header, Menu } from "./components/layouts";
 function App() {
   const { isSidebarOpened, toggleSidebar } = useSidebar();
   const routes = useRoutes([
-    { path: "/", element: <Home /> },
+    { path: "", element: <Home /> },
     { path: "*", element: <Home /> },
   ]);
 
