@@ -2,7 +2,7 @@ import "./styles/Home.scss";
 import { useContext } from "react";
 import { SidebarContext } from "../context";
 
-import Home_Content from "../content/Home_Content.mdx";
+import HomeContent from "../content/HomeContent.mdx";
 
 export function Home() {
   const isSidebarOpened = useContext(SidebarContext);
@@ -10,7 +10,7 @@ export function Home() {
     <div
       className={"content-wrapper " + (isSidebarOpened ? "sidebar-opened" : "")}
     >
-      <Home_Content />
+      <HomeContent />
     </div>
   );
 }

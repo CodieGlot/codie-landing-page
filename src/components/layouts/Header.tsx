@@ -59,19 +59,19 @@ export function Header({ toggleSidebar }: HeaderProps) {
                 Enterprise support
               </a>
             </li>
-            <a href="#" target="_blank">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="#" target="_blank">
-              <i className="fab fa-github"></i>
-            </a>
-            <a href="#" target="_blank">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="#" target="_blank">
-              <i className="fa-brands fab fa-discord"></i>
-            </a>
           </ul>
+          <a href="#" target="_blank">
+            <i className="fab fa-facebook"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i className="fa-brands fab fa-discord"></i>
+          </a>
         </div>
       </header>
     </>
