@@ -8,10 +8,10 @@ export function Menu() {
     isSidebarOpened && (
       <nav className="nav-container">
         <a href="#" className="btn btn-version">
-          Version 1
+          OVERVIEW
         </a>
         <a href="#" className="btn btn-version">
-          Version 2
+          BACKGROUND
         </a>
         <a href="#" className="btn btn-version">
           Version 3
