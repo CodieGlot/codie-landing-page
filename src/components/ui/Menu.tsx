@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./styles/Menu.scss";
 import { SidebarContext } from "../../context";
+import MyCV from "../../assets/files/NGUYEN_NHAT_HUY_CV.pdf";
 
 interface IMenuItem {
   title: string;
@@ -104,7 +105,12 @@ export function Menu() {
     isSidebarOpened && (
       <nav className="nav-container">
         {dropdownItems}
-        <a target="_blank" className="btn btn-support">
+        <a
+          href={MyCV}
+          download="NGUYEN_NHAT_HUY_CV"
+          target="_blank"
+          className="btn btn-support"
+        >
           DOWNLOAD MY CV
         </a>
       </nav>

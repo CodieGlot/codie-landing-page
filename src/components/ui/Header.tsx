@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import "./styles/Header.scss";
 import { SidebarContext } from "../../context";
+import MyCV from "../../assets/files/NGUYEN_NHAT_HUY_CV.pdf";
 
 type HeaderProps = {
   toggleSidebar: () => void;
@@ -56,7 +57,7 @@ export function Header({ toggleSidebar }: HeaderProps) {
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a href={MyCV} download="NGUYEN_NHAT_HUY_CV" target="_blank">
                 Download my CV
               </a>
             </li>
