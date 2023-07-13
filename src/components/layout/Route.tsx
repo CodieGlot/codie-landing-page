@@ -3,13 +3,21 @@ import * as content from "../../content";
 import { Home } from "../../pages";
 
 export function Route() {
-  const { OverviewContent } = content;
+  const { Overview, NestjsStarterRepo } = content;
   const routes = useRoutes([
     {
       path: "/",
       element: (
         <Home>
-          <OverviewContent />
+          <Overview />
+        </Home>
+      ),
+    },
+    {
+      path: "starter-repos/nestjs-starter-repo",
+      element: (
+        <Home>
+          <NestjsStarterRepo />
         </Home>
       ),
     },
@@ -17,7 +25,7 @@ export function Route() {
       path: "*",
       element: (
         <Home>
-          <OverviewContent />
+          <Overview />
         </Home>
       ),
     },
