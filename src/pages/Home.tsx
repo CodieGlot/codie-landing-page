@@ -14,14 +14,14 @@ export function Home({ children }: HomeProps) {
     >
       <div className="home-container">
         <div className="home-content">{children}</div>
-        <div className="markup">
+        {/* <div className="markup">
           <ul>
             <li>Introduction</li>
             <li className="active">Phisolophy</li>
             <li>Nguyen Nhat Huy</li>
             <li>Codieglot</li>
           </ul>
-        </div>
+        </div> */}
         <div className="clearfix"></div>
       </div>
     </div>
