@@ -2,7 +2,12 @@ import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./styles/Menu.scss";
 import { SidebarContext } from "../../context";
-import { IMenuItem } from "../../common/interfaces";
+
+interface IMenuItem {
+  title: string;
+  path: string;
+  children?: IMenuItem[];
+}
 
 const highlightIfActive = ({
   isActive,
@@ -22,42 +27,44 @@ const items: IMenuItem[] = [
   {
     title: "OVERVIEW",
     path: "/",
+  },
+  {
+    title: "STARTER REPOS",
+    path: "/starter-repos",
     children: [
       {
-        title: "Background",
-        path: "/background",
+        title: "NestJs Starter Repo",
+        path: "/nestjs-starter-repo",
       },
       {
-        title: "Techniques",
-        path: "/techniques",
+        title: "ReactJs Starter Repo",
+        path: "/reactjs-starter-repo",
       },
     ],
   },
   {
-    title: "CONCEPTS",
-    path: "/concepts",
+    title: "PROJECTS",
+    path: "/projects",
     children: [
       {
-        title: "Algorithms",
-        path: "/algorithms",
+        title: "Codie Landing Page",
+        path: "/codie-landing-page",
       },
       {
-        title: "Object Oriented Programming",
-        path: "/oop",
-      },
-    ],
-  },
-  {
-    title: "TOOLS",
-    path: "/tools",
-    children: [
-      {
-        title: "Text editor",
-        path: "/texteditor",
+        title: "Css Battle",
+        path: "/css-battle",
       },
       {
-        title: "Codie",
-        path: "/codie",
+        title: "Movie Landing Page",
+        path: "/movie-landing-page",
+      },
+      {
+        title: "Solana Todo App",
+        path: "/solana-todo-app",
+      },
+      {
+        title: "Chinese Chess Game",
+        path: "/chinese-chess-game",
       },
     ],
   },
@@ -85,7 +92,7 @@ export function Menu() {
         <ul className="dropdown-menu">
           {item.children.map((child) => (
             <li key={child.title}>
-              <a href={child.path}>{child.title}</a>
+              <a href={item.path + child.path}>{child.title}</a>
             </li>
           ))}
         </ul>
@@ -98,7 +105,7 @@ export function Menu() {
       <nav className="nav-container">
         {dropdownItems}
         <a target="_blank" className="btn btn-support">
-          Get enterprise support
+          DOWNLOAD MY CV
         </a>
       </nav>
     )

@@ -40,23 +40,24 @@ export function Header({ toggleSidebar }: HeaderProps) {
           <div className="search-wrapper" id="search"></div>
           <ul>
             <li>
-              <a href="#" target="_blank">
-                Our website
+              <a href="/">My website</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/codieglot/" target="_blank">
+                My Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/CodieGlot?tab=repositories"
+                target="_blank"
+              >
+                <span className="new">NEW</span> Repositories
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
-                Courses
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <span className="new">NEW</span> Devtools
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                Enterprise support
+                Download my CV
               </a>
             </li>
           </ul>
