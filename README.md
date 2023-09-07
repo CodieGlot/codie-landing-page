@@ -1,4 +1,4 @@
-# Developer Portfolio - React App
+# Codie Landing Page
 
 This project is a simple React application that allows developers to showcase their skills, introduce themselves, and list their completed projects. It provides a platform for developers to create their online portfolios and share their work with others.
 
@@ -45,6 +45,6 @@ For any inquiries or support, please contact the project maintainer:
 
 - Name: CodieGlot
 
-Feel free to visit our [website]([https://projecthub.co](https://codie-landing-page.vercel.app/) for more information and to join our developer community.
+Feel free to visit our [website](CodieLandingPage)(https://codie-landing-page.vercel.app/) for more information and to join our developer community.
 
 Happy coding!
