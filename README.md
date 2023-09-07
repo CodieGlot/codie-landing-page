@@ -45,6 +45,6 @@ For any inquiries or support, please contact the project maintainer:
 
 - Name: CodieGlot
 
-Feel free to visit our [website](CodieLandingPage)(https://codie-landing-page.vercel.app/) for more information and to join our developer community.
+Feel free to visit our [website](https://codie-landing-page.vercel.app/) for more information and to join our developer community.
 
 Happy coding!
