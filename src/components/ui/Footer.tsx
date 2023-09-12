@@ -6,19 +6,19 @@ export function Footer() {
       <footer>
         <div className="social-wrapper">
           <a href="https://www.facebook.com/codieglot/" target="_blank">
-            <i className="fab fa-facebook"></i>
+            <i className="fab fa-facebook footer-icon"></i>
           </a>
           <a href="https://github.com/CodieGlot" target="_blank">
-            <i className="fab fa-github"></i>
+            <i className="fab fa-github footer-icon"></i>
           </a>
           <a href="https://www.linkedin.com/in/codieglot/" target="_blank">
-            <i className="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin footer-icon"></i>
           </a>
           <a
             href="https://discordapp.com/users/847426886182240307"
             target="_blank"
           >
-            <i className="fa-brands fa-discord"></i>
+            <i className="fa-brands fa-discord footer-icon"></i>
           </a>
         </div>
         <div className="credits">

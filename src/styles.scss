@@ -343,3 +343,9 @@ app-menu:hover::-webkit-scrollbar-thumb {
 app-menu::-webkit-scrollbar-thumb:hover {
   -webkit-transition: #dedede 1s linear;
 }
+.footer-icon{
+  color: rgb(35, 34, 34);
+  &:hover{
+    color: #ed2945;
+  }
+}
